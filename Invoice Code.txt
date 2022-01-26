@@ -1,0 +1,40 @@
+using System;
+
+namespace Invoice
+{
+    class Invoice
+    {
+        static void Main(string[] args)
+        {
+            
+            
+             string partdesc = "Parts Description: ";
+             string partdestxt;
+             string partNum;
+             string partnumber= "Part Number: " ;
+             int partquanity;
+             int partprice;
+             int result;                           
+
+            Console.WriteLine( partdesc );
+            partdestxt = Console.ReadLine();
+
+            Console.WriteLine(partnumber);
+            partNum= Console.ReadLine();
+
+            Console.WriteLine("Part Quanity: ");
+            partquanity = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Part Price: ");
+            partprice = int.Parse(Console.ReadLine());
+
+            result = partquanity * partprice;
+            Console.WriteLine($"Your complete Transaction:");
+            Console.WriteLine($"Part Description: {partdestxt}");
+            Console.WriteLine($"Part Number {partNum}");
+            Console.WriteLine($"Total Amount {partquanity}");
+            Console.WriteLine($"Total Amount {partprice}");
+            Console.WriteLine($"Total Amount {result}");
+        }
+    }
+}
